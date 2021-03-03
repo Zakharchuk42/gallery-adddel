@@ -1,0 +1,153 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-wr {
+    display: flex;
+    justify-content: center;
+}
+
+.containter {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.refresh {
+    font-size: 20px;
+    background-color: darkgreen;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.refresh:hover {
+    background-color: green;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dateimg {
+    font-size: 20px;
+}
+.delete:hover {
+    cursor: pointer;
+}
+
+.deletediv {
+    opacity: 0;
+    visibility: 0;
+    transition: all 0.4 ease;
+    z-index: -2;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.row > img:first-child {
+    border: 5px solid red;
+}
+
+img {
+    width: 20%;
+    height: 100%;
+    border: 5px solid grey;
+    margin-bottom: 40px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    webkit-border-radius: 50%;
+    moz-border-radius: 50%;
+}
+
+img:hover {
+    border: 5px solid yellow !important;
+    cursor: pointer;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+button,
+button:focus {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.8s ease 0s;
+}
+.popup-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    transition: all 0.8s ease 0s;
+}
+
+.popup-body-flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.popup-close {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.popcont img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    webkit-border-radius: 0;
+    moz-border-radius: 0;
+}
+
+.popcont img:hover {
+    cursor: pointer;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+    border: none !important;
+}
